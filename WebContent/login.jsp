@@ -45,7 +45,7 @@
     .login-main {
       width: 460px;
 	      padding: 0 80px;
-	      height: 540px;
+	      height: 535px;
 	      background: #ffffff;
 	      box-shadow: 0 15px 30px 0 rgba(111, 169, 228, 0.33);
 	      border-radius: 10px;
@@ -69,6 +69,18 @@
 	    border: 1px solid #999;
 	    outline: none;
       }
+      .login-main .input-code{
+      	width: 278px;
+      	height: 60px;
+      }
+      .login-main .code{
+      	vertical-align: middle;
+      	margin-left:20px;
+      }
+      .login-main .flush{
+      		vertical-align: middle;
+      		cursor: pointer;
+      }
       .login-main .button {
         height: 54px;
         color: #fff;
@@ -78,11 +90,17 @@
       }
       .help {
         display: inline-flex;
-        justify-content: flex-end;
+        justify-content: space-between;
         width: 460px;
         }
         .help a{        
+          font-size: 18px;
           cursor: pointer;
+          line-height: 18px;
+          text-decoration: none;
+        }
+        .help a:hover{
+          text-decoration: underline;
         }
        .help  .help-l {
           color: #7a7f85;
@@ -100,15 +118,16 @@
         <span>学生信息管理系统</span>
       </div>
       <div class="login-main">
-        <p class="title">注册</p>
-        <form>
+        <p class="title">登录</p>
+        <form method="post" action="login.do">
         <input type="text" placeholder="请输入用户名" ><br />
-        <input type="number" placeholder="请输入手机号" ><br />
-        <input type="password" placeholder="请输入密码" ><br />
-        <input type="submit" class="button" value="注册">
+        <input type="password"  placeholder="请输入密码" ><br />
+        <input type="text" class="input-code" placeholder="请输入验证码"  /><img class="code" src="./images/code.jpg" /> <img class="flush" src="./images/flush.jpg" /> 
+        <input type="submit" class="button" value="登录">
         </form>
         <p class="help">
-          已有账号，<a href="login.jsp" class="help-r">立即登录</span>
+          <a href="reset_password.jsp" class="help-l">忘记密码</span>
+          <a href="register.jsp" class="help-r">注册</span>
         </p>
       </div>
     </div>

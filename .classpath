@@ -9,5 +9,10 @@
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
 	<classpathentry kind="lib" path="G:/apache-tomcat-7.0.94/lib/servlet-api.jar"/>
+	<classpathentry kind="lib" path="C:/Users/琪琪的cp/Documents/Tencent Files/914670824/FileRecv/mysql-connector-java-8.0.16/mysql-connector-java-8.0.16.jar">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
+		</attributes>
+	</classpathentry>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>

@@ -100,15 +100,15 @@
         <span>学生信息管理系统</span>
       </div>
       <div class="login-main">
-        <p class="title">注册</p>
+        <p class="title">找回密码</p>
         <form>
         <input type="text" placeholder="请输入用户名" ><br />
         <input type="number" placeholder="请输入手机号" ><br />
-        <input type="password" placeholder="请输入密码" ><br />
-        <input type="submit" class="button" value="注册">
+        <input type="password" placeholder="请输入新密码" ><br />
+        <input type="submit" class="button" value="提交">
         </form>
         <p class="help">
-          已有账号，<a href="login.jsp" class="help-r">立即登录</span>
+          <a href="login.jsp" class="help-r">返回登录</span>
         </p>
       </div>
     </div>
